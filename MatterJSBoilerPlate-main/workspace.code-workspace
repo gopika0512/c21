@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\C21Gopika-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "C21Gopika-master"
+	}
+}
