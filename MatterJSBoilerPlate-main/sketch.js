@@ -22,7 +22,7 @@ function setup() {
 	//Create the Bodies Here.
 
     var ball_options={
-		isStatic:false,
+		isStatic: false,
 		restitution:0.3,
 		friction:0,
 		density:1.2
@@ -34,11 +34,11 @@ function setup() {
 
 
 
- ground = new Ground(width/2,390,width,20);
+ ground = new Ground(width/2,390,width,20)
  leftside = new Ground(200,350,20,60);
  rightside = new Ground(300,350,20,60);
 
- ball = Bodies.circle(100,10,20,ball_options);
+ ball = Bodies.circle(100,10,10,ball_options);
  World.add(world,ball); 
 
   Engine.run(engine);
@@ -65,6 +65,6 @@ function draw() {
 
 function keyPressed() {
 
-	Matter.Body.applyForce(ball,ball.position,{x: 10, y: -20});
+	Matter.Body.applyForce(ball,ball.position,{x: 20, y: -20});
 }
 
